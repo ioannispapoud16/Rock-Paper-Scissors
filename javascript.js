@@ -24,23 +24,41 @@ function getHumanChoice()
             return p_choice;
     }
 }
+
+function playRound(p_choice,c_choice)
+{
+    if(p_choice=="Rock" && c_choice=="Scissors")
+    {
+        console.log(p_choice+" beats "+c_choice+". Good job! Plus One Point for you");
+        p_score++;
+    }
+    else if(p_choice=="Scissors" && c_choice=="Paper")
+    {
+        console.log(p_choice+" beats "+c_choice+". Good job! Plus One Point for you");
+        p_score++;
+    }
+    else if(p_choice=="Paper" && c_choice=="Rock")
+    {
+        console.log(p_choice+" beats "+c_choice+". Good job! Plus One Point for you");
+        p_score++;
+    }
+    else if(p_choice==c_choice)
+    {
+        console.log(p_choice+" and "+c_choice+" is A tie. No points for everyone");
+    }
+    else
+    {
+        console.log(c_choice+" beats "+p_choice+". Plus One Point for the computer :D");
+        c_score++;
+    }
+}
 let p_score=0;
 let c_score=0;
 
 let p_choice=getHumanChoice();
 let c_choice=getComputerChoice();
-console.log(p_choice);
-console.log(c_choice);
+playRound(p_choice,c_choice);
 
-if(p_choice=="Rock" && c_choice=="Scissors")
-    p_score++;
-else if(p_choice=="Scissors" && c_choice=="Paper")
-    p_score++
-else if(p_choice=="Paper" && c_choice=="Rock")
-    p_score++
-else if(p_choice==c_choice); 
-else
-    c_score++;
 console.log(p_score);
 console.log(c_score);
     
