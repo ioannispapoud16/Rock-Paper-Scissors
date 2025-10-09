@@ -16,6 +16,8 @@ function getHumanChoice()
     while(1)
     {
         let p_choice= prompt("Choose Wisley:\nRock Paper Scissors");
+            p_choice=p_choice.trim();
+            p_choice= p_choice.charAt(0).toUpperCase() + p_choice.slice(1).toLowerCase();
         if (p_choice !='Rock' && p_choice !="Paper" && p_choice!="Scissors")
             console.log("Invalid Choice. Try again");
         else
