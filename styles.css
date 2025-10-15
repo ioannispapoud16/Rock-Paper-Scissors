@@ -1,0 +1,37 @@
+body
+{
+    background-image: url('images/backround.png');
+}
+
+.header
+{
+    display: flex;
+    justify-content: center;
+}
+.hero
+{
+    display: flex;
+}
+.selection
+{
+    display: flex;
+}
+#rock_B
+{
+    height: 200px;
+    width: 200px;
+}
+#paper_B
+{
+    height: 200px;
+    width: 200px;
+}
+#scissors_B
+{
+    height: 200px;
+    width: 200px;
+}
+.footer
+{
+    display: flex;
+}
