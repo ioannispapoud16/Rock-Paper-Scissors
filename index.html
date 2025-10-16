@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 </head>
 <body>
     <script src="javascript.js" defer></script>
@@ -14,10 +18,16 @@
     <div class="hero">
         <h2>Make your choice</h2>
         <p class="output text">First to 5 wins</p>
-        <img src="images/mystery.png" width="200px" height="200px">
-        <h3>Player Score:</h3>
-        <img src="images/mystery.png" width="200px" height="200px">
-        <h3>Computer Score:</h3>
+        <div class="scoreboard">
+            <div class="scorebox">
+                <img src="images/mystery.png" width="200px" height="200px">
+                <h3 id="player_Score">Player Score: 0</h3>
+            </div>
+            <div class="scorebox">
+                <img src="images/mystery.png" width="200px" height="200px">
+                <h3 id="computer_Score">Computer Score: 0</h3>
+            </div>
+        </div>
     </div>
     <div class="selection">
             <button id="rock_B"><img src="images/rock.png" width="200px" height="200px"></button>

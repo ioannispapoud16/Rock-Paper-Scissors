@@ -1,20 +1,53 @@
 body
 {
-    background-image: url('images/backround.png');
+    background: url('images/background.png') center/cover no-repeat fixed;
+    margin: 0;
+    font-family: "Press Start 2P", sans-serif;
+    text-shadow: 
+        1px 1px 0 #000,   
+        -1px -1px 0 #000, 
+        1px -1px 0 #000,  
+        -1px 1px 0 #000;  
+}
+
+button
+{
+    background-color: rgba(31, 41, 55,0.7);
+    border: 2px solid #3882F6;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 .header
 {
     display: flex;
     justify-content: center;
+    background-color: rgba(31, 41, 55,0.9);
+    color: #f7a528;
 }
 .hero
 {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(31, 41, 55,0.9);
+    margin: 48px;
+    padding: 10px;
+    border: 2px solid #3882F6;
+    border-radius: 8px;
+    color: white;
 }
-.selection
+.selection 
 {
+    background-color: rgba(31, 41, 55,0.9);
+    margin: 12px;
+    padding: 5px;
+    border: 2px solid #3882F6;
+    border-radius: 8px;
     display: flex;
+    justify-content: center;
+    gap: 48px;
 }
 #rock_B
 {
@@ -31,7 +64,23 @@ body
     height: 200px;
     width: 200px;
 }
+.scoreboard
+{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+.scorebox
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .footer
 {
     display: flex;
+    justify-content: center;
+    background-color: rgba(31, 41, 55,0.9);
+    color: #f7a528;
 }
